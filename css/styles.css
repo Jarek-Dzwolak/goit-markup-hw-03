@@ -1,0 +1,205 @@
+:root {
+    --main-color: #212121;
+    --main-bright-color: #ffffff;
+    --text-color: #757575;
+    --style-color: #2196f3;
+    --style-color2: #eeeeee;
+    --black: #000000;
+    --style-color3: #f5f4fa;
+    --white: #ffffff;
+    --second-background-color: #2f303a;
+    --ttry: #ececec;
+}
+
+body {
+    font-family: 'Roboto';
+    color: var(--main-color);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    background-color: var(--main-bright-color);
+}
+.title-class {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36em;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.frist-section {
+    font-weight: 900;
+    font-size: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--second-background-color);
+    color: var(--main-bright-color);
+}
+
+.third-section {
+    background-color: var(--style-color3);
+}
+.footer-section {
+    background-color: var(--second-background-color);
+}
+a {
+    text-decoration: none;
+}
+
+.link {
+    font-weight: 500;
+    line-height: 16px;
+    color: var(--main-color);
+    list-style-type: none;
+}
+.link-current {
+    color: var(--style-color);
+}
+.ul-class {
+    list-style-type: none;
+}
+.link:hover {
+    color: var(--style-color);
+}
+.link:focus {
+    color: var(--style-color);
+}
+.h2-tittle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--main-color);
+}
+.link-kontakt {
+    font-style: normal;
+    color: var(--text-color);
+    font-weight: 500;
+    cursor: pointer;
+}
+.link-kontakt:hover {
+    color: var(--style-color);
+}
+.link-kontakt:focus {
+    color: var(--style-color);
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--style-color);
+}
+.log-dark {
+    color: #000000;
+}
+.log-bright {
+    color: var(--main-bright-color);
+}
+.button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--main-bright-color);
+    background-color: var(--style-color);
+    cursor: pointer;
+}
+.button:hover {
+    cursor: pointer;
+}
+.button-list {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.7em;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    background-color: var(--style-color3);
+}
+.button-list:hover {
+    color: var(--main-bright-color);
+    background-color: var(--style-color);
+}
+.button-list:focus {
+    color: var(--main-bright-color);
+    background-color: var(--style-color);
+}
+.employees-name {
+    font-weight: 500;
+    font-size: 16px;
+}
+.employees-tittle {
+    font-weight: 400;
+    font-size: 16px;
+
+    color: var(--text-color);
+}
+.adress-style {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7em;
+    color: var(--main-bright-color);
+}
+.h3-tittle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+.h3-text {
+    font-weight: 400;
+    line-height: 1.7em;
+    color: var(--text-color);
+}
+.our-project {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2em;
+    letter-spacing: 0.06em;
+}
+.our-capabilities {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.85em;
+    color: var(--text-color);
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.mail-class {
+    text-decoration-line: underline;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    color: var(--text-color);
+}
+.mail-class:hover {
+    color: var(--style-color);
+}
+.mail-class:focus {
+    color: var(--style-color);
+    line-height: ;
+}
