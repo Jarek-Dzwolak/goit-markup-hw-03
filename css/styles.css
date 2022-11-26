@@ -30,6 +30,7 @@ p {
 body {
     font-family: 'Roboto';
     color: var(--main-color);
+    margin: 0;
 }
 .container {
     width: 1200px;
@@ -65,7 +66,7 @@ ul {
 .frist-section {
     background-color: var(--second-background-color);
     color: var(--main-bright-color);
-    padding: 200px 452px 280px 452px;
+    padding: 200px 94px 280px 94px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,6 +134,7 @@ ul {
 }
 .link-current {
     color: var(--style-color);
+    font-weight: 500;
 }
 
 .link:hover {
@@ -274,6 +276,7 @@ ul {
     display: flex;
     gap: 50px;
 }
+
 .ul-wrapper {
     display: flex;
     margin-left: 93px;
