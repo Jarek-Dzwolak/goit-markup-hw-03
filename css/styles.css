@@ -57,6 +57,9 @@ ul {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.container a {
+    text-decoration: none;
+}
 /* STYLE-SECTION */
 
 .frist-section {
@@ -120,9 +123,6 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 9px;
-}
-.container a {
-    text-decoration: none;
 }
 
 .link {
@@ -207,13 +207,6 @@ ul {
     color: var(--main-bright-color);
 }
 
-.our-project {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2em;
-    letter-spacing: 0.06em;
-}
-
 .mail-class {
     text-decoration-line: underline;
     font-size: 14px;
@@ -242,6 +235,10 @@ ul {
 }
 .cards > li > div > h2 {
     padding: 20px 24px 4px 24px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2em;
+    letter-spacing: 0.06em;
 }
 .cards > li > div > p {
     font-weight: 400;
@@ -304,6 +301,7 @@ ul {
 .employess > li {
     justify-content: center;
     background-color: var(--main-bright-color);
+    border-radius: 4px;
 }
 .employess > li > h3 {
     padding: 30px 99px 5px 99px;
