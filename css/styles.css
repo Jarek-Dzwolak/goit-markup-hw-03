@@ -1,3 +1,4 @@
+/* GLOBAL STYLES */
 :root {
     --main-color: #212121;
     --main-bright-color: #ffffff;
@@ -38,6 +39,35 @@ body {
 img {
     vertical-align: middle;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+/* STYLE-SECTION */
+
+.frist-section {
+    background-color: var(--second-background-color);
+    color: var(--main-bright-color);
+    padding: 200px 452px 280px 452px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .title-clas {
     font-weight: 900;
     font-size: 44px;
@@ -46,18 +76,34 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-.frist-section {
-    background-color: var(--second-background-color);
-    color: var(--main-bright-color);
-    padding: 50px 0;
-}
-.frist-button {
+.frist-section > button {
     box-sizing: border-box;
     width: 200px;
     height: 50px;
     border-radius: 5px;
     border: 0px;
-    /* box-shadow: ; */
+    background-color: var(--style-color);
+    color: var(--main-bright-color);
+    margin-top: 30px;
+}
+.nasze-atuty {
+    display: flex;
+    gap: 30px;
+    padding-top: 94px;
+}
+.nasze-atuty > li > h3 {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+.nasze-atuty > li > p {
+    font-weight: 400;
+    line-height: 1.7em;
+    color: var(--text-color);
 }
 .third-section {
     background-color: var(--style-color3);
@@ -88,15 +134,7 @@ img {
 .link-current {
     color: var(--style-color);
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.nasze-atuty {
-    display: flex;
-    gap: 30px;
-}
+
 .link:hover {
     color: var(--style-color);
 }
@@ -113,15 +151,15 @@ ul {
     letter-spacing: 0.03em;
 
     color: var(--main-color);
+    padding-bottom: 50px;
+    padding-top: 94px;
 }
 .link-kontakt {
     color: var(--text-color);
     font-weight: 500;
     cursor: pointer;
 }
-.link-kontakt:hover {
-    color: var(--style-color);
-}
+.link-kontakt:hover,
 .link-kontakt:focus {
     color: var(--style-color);
 }
@@ -164,74 +202,28 @@ ul {
     background-color: var(--style-color);
 }
 
-.employees-name {
-    font-weight: 500;
-    font-size: 16px;
-}
-.employees-tittle {
-    font-size: 16px;
-
-    color: var(--text-color);
-}
 .adress-style {
     line-height: 1.7em;
     color: var(--main-bright-color);
 }
-.h3-tittle {
-    font-family: 'Roboto';
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--main-color);
-}
-.h3-text {
-    font-weight: 400;
-    line-height: 1.7em;
-    color: var(--text-color);
-}
 .our-project {
     font-weight: 700;
     font-size: 18px;
     line-height: 2em;
     letter-spacing: 0.06em;
-    /* margin: 20px 24px 4px 24px; */
 }
-.our-capabilities {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.85em;
-    color: var(--text-color);
-    margin: 4px 4px 20px 24px;
-}
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
 
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
 .mail-class {
     text-decoration-line: underline;
-
     font-size: 14px;
-
     color: var(--text-color);
 }
-.mail-class:hover {
-    color: var(--style-color);
-}
+.mail-class:hover,
 .mail-class:focus {
     color: var(--style-color);
 }
+
 .buttons-set {
     display: flex;
     flex-wrap: wrap;
@@ -248,7 +240,16 @@ ul {
     border-right: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
 }
-
+.cards > li > div > h2 {
+    padding: 20px 24px 4px 24px;
+}
+.cards > li > div > p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.85em;
+    color: var(--text-color);
+    margin: 4px 4px 20px 24px;
+}
 .header-wrapper {
     border-bottom: 1px solid #ececec;
     padding-top: 24px;
@@ -287,4 +288,31 @@ ul {
 .cards-items {
     margin-top: 94px;
     margin-bottom: 94px;
+}
+.ul-pictures {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 94px;
+}
+.employess {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 94px;
+}
+.employess > li {
+    justify-content: center;
+    background-color: var(--main-bright-color);
+}
+.employess > li > h3 {
+    padding: 30px 99px 5px 99px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.employess > li > p {
+    padding: 5px 70px 30px 70px;
+    font-size: 16px;
+    color: var(--text-color);
+    justify-content: center;
 }
