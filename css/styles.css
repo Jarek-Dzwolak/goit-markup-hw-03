@@ -10,17 +10,35 @@
     --second-background-color: #2f303a;
     --ttry: #ececec;
 }
-
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: 'Roboto';
     color: var(--main-color);
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    background-color: var(--main-bright-color);
 }
-.title-class {
-    font-family: 'Roboto';
-    font-style: normal;
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+img {
+    vertical-align: middle;
+}
+.title-clas {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36em;
@@ -29,21 +47,35 @@ body {
     text-transform: uppercase;
 }
 .frist-section {
-    font-weight: 900;
-    font-size: 44px;
-    text-align: center;
-    text-transform: uppercase;
     background-color: var(--second-background-color);
     color: var(--main-bright-color);
+    padding: 50px 0;
 }
-
+.frist-button {
+    box-sizing: border-box;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: 0px;
+    /* box-shadow: ; */
+}
 .third-section {
     background-color: var(--style-color3);
 }
 .footer-section {
     background-color: var(--second-background-color);
+    padding: 60px 0;
 }
-a {
+.footer-section address {
+    font-style: normal;
+}
+.footer-section ul {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.container a {
     text-decoration: none;
 }
 
@@ -56,8 +88,14 @@ a {
 .link-current {
     color: var(--style-color);
 }
-.ul-class {
+ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nasze-atuty {
+    display: flex;
+    gap: 30px;
 }
 .link:hover {
     color: var(--style-color);
@@ -67,17 +105,16 @@ a {
 }
 .h2-tittle {
     font-family: 'Roboto';
-    font-style: normal;
+
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
 
     color: var(--main-color);
 }
 .link-kontakt {
-    font-style: normal;
     color: var(--text-color);
     font-weight: 500;
     cursor: pointer;
@@ -94,6 +131,7 @@ a {
     font-weight: 700;
     font-size: 26px;
     color: var(--style-color);
+    margin-right: 93px;
 }
 .log-dark {
     color: #000000;
@@ -101,57 +139,47 @@ a {
 .log-bright {
     color: var(--main-bright-color);
 }
-.button {
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+.buttons > li > button {
     font-family: 'Roboto';
-    font-style: normal;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    color: var(--main-bright-color);
-    background-color: var(--style-color);
-    cursor: pointer;
-}
-.button:hover {
-    cursor: pointer;
-}
-.button-list {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.7em;
-    letter-spacing: 0.03em;
     color: var(--main-color);
     background-color: var(--style-color3);
+    cursor: pointer;
+    border: none;
+    padding: 6px 22px;
+    border-radius: 4px;
+    margin: 0 5px 30px 5px;
 }
-.button-list:hover {
+.buttons > li > button:hover,
+.buttons > li > button:focus {
     color: var(--main-bright-color);
     background-color: var(--style-color);
 }
-.button-list:focus {
-    color: var(--main-bright-color);
-    background-color: var(--style-color);
-}
+
 .employees-name {
     font-weight: 500;
     font-size: 16px;
 }
 .employees-tittle {
-    font-weight: 400;
     font-size: 16px;
 
     color: var(--text-color);
 }
 .adress-style {
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.7em;
     color: var(--main-bright-color);
 }
 .h3-tittle {
     font-family: 'Roboto';
-    font-style: normal;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -169,12 +197,14 @@ a {
     font-size: 18px;
     line-height: 2em;
     letter-spacing: 0.06em;
+    /* margin: 20px 24px 4px 24px; */
 }
 .our-capabilities {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.85em;
     color: var(--text-color);
+    margin: 4px 4px 20px 24px;
 }
 .visually-hidden {
     position: absolute;
@@ -191,9 +221,9 @@ a {
 }
 .mail-class {
     text-decoration-line: underline;
-    font-weight: 400;
+
     font-size: 14px;
-    font-style: normal;
+
     color: var(--text-color);
 }
 .mail-class:hover {
@@ -201,5 +231,60 @@ a {
 }
 .mail-class:focus {
     color: var(--style-color);
-    line-height: ;
+}
+.buttons-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.cards > li > div {
+    border-bottom: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+}
+
+.header-wrapper {
+    border-bottom: 1px solid #ececec;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.header-wrapper nav {
+    display: flex;
+    align-items: center;
+}
+.header-wrapper .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 46px;
+}
+.nav-wrapper + div {
+    display: flex;
+    gap: 50px;
+}
+.ul-wrapper {
+    display: flex;
+    margin-left: 93px;
+}
+.ul-wrapper > li {
+    margin-left: 46px;
+    margin-bottom: 126px;
+}
+.cards-items {
+    margin-top: 94px;
+    margin-bottom: 94px;
 }
