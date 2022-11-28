@@ -37,6 +37,9 @@ body {
     padding: 0 15px;
     margin: 0 auto;
 }
+.section {
+    padding: 94px 0;
+}
 img {
     vertical-align: middle;
 }
@@ -61,12 +64,73 @@ ul {
 .container a {
     text-decoration: none;
 }
-/* STYLE-SECTION */
+.link-kontakt {
+    color: var(--text-color);
+    font-weight: 500;
+    cursor: pointer;
+}
+.link-kontakt:hover,
+.link-kontakt:focus {
+    color: var(--style-color);
+}
+/*-----Heder-----*/
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--style-color);
+    margin-right: 93px;
+}
+.log-dark {
+    color: #000000;
+}
+.header-wrapper {
+    border-bottom: 1px solid #ececec;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.header-wrapper nav {
+    display: flex;
+    align-items: center;
+}
+.header-wrapper .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 46px;
+}
+.nav-wrapper + div {
+    display: flex;
+    gap: 50px;
+}
+.nav-link {
+    font-weight: 500;
+    line-height: 16px;
+    color: var(--main-color);
+    list-style-type: none;
+}
+.link-current {
+    color: var(--style-color);
+    font-weight: 500;
+}
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--style-color);
+}
 
+/*-----MAIN-INDEX-----*/
 .frist-section {
     background-color: var(--second-background-color);
     color: var(--main-bright-color);
-    padding: 200px 94px 280px 94px;
+    padding: 200px 452px 280px 452px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,11 +153,11 @@ ul {
     background-color: var(--style-color);
     color: var(--main-bright-color);
     margin-top: 30px;
+    font-family: 'Roboto';
 }
 .nasze-atuty {
     display: flex;
     gap: 30px;
-    padding-top: 94px;
 }
 .nasze-atuty > li > h3 {
     font-family: 'Roboto';
@@ -112,37 +176,7 @@ ul {
 .third-section {
     background-color: var(--style-color3);
 }
-.footer-section {
-    background-color: var(--second-background-color);
-    padding: 60px 0;
-}
-.footer-section address {
-    font-style: normal;
-}
-.footer-section ul {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
-}
 
-.link {
-    font-weight: 500;
-    line-height: 16px;
-    color: var(--main-color);
-    list-style-type: none;
-}
-.link-current {
-    color: var(--style-color);
-    font-weight: 500;
-}
-
-.link:hover {
-    color: var(--style-color);
-}
-.link:focus {
-    color: var(--style-color);
-}
 .h2-tittle {
     font-family: 'Roboto';
 
@@ -154,31 +188,40 @@ ul {
 
     color: var(--main-color);
     padding-bottom: 50px;
-    padding-top: 94px;
+    margin-top: -94px;
 }
-.link-kontakt {
-    color: var(--text-color);
-    font-weight: 500;
-    cursor: pointer;
-}
-.link-kontakt:hover,
-.link-kontakt:focus {
-    color: var(--style-color);
+.ul-pictures {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 94px;
 }
 
-.logo {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    color: var(--style-color);
-    margin-right: 93px;
+.employess {
+    display: flex;
+    flex-wrap: nowrap;
+
+    gap: 30px;
+    padding-bottom: 94px;
 }
-.log-dark {
-    color: #000000;
+.employess > li {
+    justify-content: center;
+    background-color: var(--main-bright-color);
+    border-radius: 4px;
 }
-.log-bright {
-    color: var(--main-bright-color);
+.employess > li > h3 {
+    padding: 30px 99px 5px 99px;
+    font-weight: 500;
+    font-size: 16px;
 }
+.employess > li > p {
+    padding-bottom: 30px;
+    font-size: 16px;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+}
+/*-----MAIN-PORTFOLIO */
 .buttons {
     display: flex;
     justify-content: center;
@@ -202,21 +245,6 @@ ul {
 .buttons > li > button:focus {
     color: var(--main-bright-color);
     background-color: var(--style-color);
-}
-
-.adress-style {
-    line-height: 1.7em;
-    color: var(--main-bright-color);
-}
-
-.mail-class {
-    text-decoration-line: underline;
-    font-size: 14px;
-    color: var(--text-color);
-}
-.mail-class:hover,
-.mail-class:focus {
-    color: var(--style-color);
 }
 
 .buttons-set {
@@ -249,71 +277,39 @@ ul {
     color: var(--text-color);
     margin: 4px 4px 20px 24px;
 }
-.header-wrapper {
-    border-bottom: 1px solid #ececec;
-    padding-top: 24px;
-    padding-bottom: 25px;
-}
-.header-wrapper nav {
-    display: flex;
-    align-items: center;
-}
-.header-wrapper .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.nav-wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-.nav-list {
-    display: flex;
-    justify-content: space-between;
-    gap: 46px;
-}
-.nav-wrapper + div {
-    display: flex;
-    gap: 50px;
-}
 
-.ul-wrapper {
-    display: flex;
-    margin-left: 93px;
-}
-.ul-wrapper > li {
-    margin-left: 46px;
-    margin-bottom: 126px;
-}
 .cards-items {
     margin-top: 94px;
     margin-bottom: 94px;
 }
-.ul-pictures {
+
+/*-----FOOTER-----*/
+.footer-section {
+    background-color: var(--second-background-color);
+    padding: 60px 0;
+}
+.footer-section address {
+    font-style: normal;
+}
+.footer-section ul {
+    margin-top: 20px;
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding-bottom: 94px;
+    flex-direction: column;
+    gap: 9px;
 }
-.employess {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding-bottom: 94px;
+.adress-style {
+    line-height: 1.7em;
+    color: var(--main-bright-color);
 }
-.employess > li {
-    justify-content: center;
-    background-color: var(--main-bright-color);
-    border-radius: 4px;
+.log-bright {
+    color: var(--main-bright-color);
 }
-.employess > li > h3 {
-    padding: 30px 99px 5px 99px;
-    font-weight: 500;
-    font-size: 16px;
-}
-.employess > li > p {
-    padding: 5px 70px 30px 70px;
-    font-size: 16px;
+.mail-class {
+    text-decoration-line: underline;
+    font-size: 14px;
     color: var(--text-color);
-    justify-content: center;
+}
+.mail-class:hover,
+.mail-class:focus {
+    color: var(--style-color);
 }
