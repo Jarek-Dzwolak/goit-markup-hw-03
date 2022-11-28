@@ -127,11 +127,16 @@ ul {
 }
 
 /*-----MAIN-INDEX-----*/
-.frist-section {
+.dark-back {
+    background-color: var(--second-background-color);
+}
+.first-section {
     background-color: var(--second-background-color);
     color: var(--main-bright-color);
-    padding: 200px 452px 280px 452px;
+    padding-top: 96px;
+    padding-bottom: 176px;
     display: flex;
+
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -144,7 +149,7 @@ ul {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-.frist-section > button {
+.first-section > button {
     box-sizing: border-box;
     width: 200px;
     height: 50px;
@@ -154,22 +159,25 @@ ul {
     color: var(--main-bright-color);
     margin-top: 30px;
     font-family: 'Roboto';
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 0.06em;
 }
-.nasze-atuty {
+.our-strengths {
     display: flex;
     gap: 30px;
 }
-.nasze-atuty > li > h3 {
+.our-strengths > li > h3 {
     font-family: 'Roboto';
+    font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-color);
+    margin-bottom: 10px;
 }
-.nasze-atuty > li > p {
-    font-weight: 400;
+.our-strengths > li > p {
     line-height: 1.7em;
     color: var(--text-color);
 }
@@ -188,7 +196,6 @@ ul {
 
     color: var(--main-color);
     padding-bottom: 50px;
-    margin-top: -94px;
 }
 .ul-pictures {
     display: flex;
@@ -271,7 +278,6 @@ ul {
     letter-spacing: 0.06em;
 }
 .cards > li > div > p {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.85em;
     color: var(--text-color);
@@ -298,6 +304,9 @@ ul {
     gap: 9px;
 }
 .adress-style {
+    font-size: 14px;
+    line-height: 1.7%;
+    letter-spacing: 0.03em;
     line-height: 1.7em;
     color: var(--main-bright-color);
 }
@@ -305,9 +314,12 @@ ul {
     color: var(--main-bright-color);
 }
 .mail-class {
-    text-decoration-line: underline;
+    text-decoration-line: underline !important ;
     font-size: 14px;
     color: var(--text-color);
+
+    font-weight: 500;
+    line-height: 1.7%;
 }
 .mail-class:hover,
 .mail-class:focus {
