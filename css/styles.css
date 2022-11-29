@@ -61,13 +61,13 @@ ul {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.container a {
-    text-decoration: none;
-}
+
 .link-kontakt {
     color: var(--text-color);
     font-weight: 500;
     cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
 }
 .link-kontakt:hover,
 .link-kontakt:focus {
@@ -80,6 +80,7 @@ ul {
     font-size: 26px;
     color: var(--style-color);
     margin-right: 93px;
+    text-decoration: none;
 }
 .log-dark {
     color: #000000;
@@ -116,10 +117,12 @@ ul {
     line-height: 16px;
     color: var(--main-color);
     list-style-type: none;
+    text-decoration: none;
 }
 .link-current {
     color: var(--style-color);
     font-weight: 500;
+    text-decoration: none;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -158,7 +161,6 @@ ul {
     background-color: var(--style-color);
     color: var(--main-bright-color);
     margin-top: 30px;
-    font-family: 'Roboto';
     cursor: pointer;
     font-weight: 700;
     letter-spacing: 0.06em;
@@ -168,7 +170,6 @@ ul {
     gap: 30px;
 }
 .our-strengths > li > h3 {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -186,8 +187,6 @@ ul {
 }
 
 .h2-tittle {
-    font-family: 'Roboto';
-
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -234,8 +233,6 @@ ul {
     justify-content: center;
 }
 .buttons > li > button {
-    font-family: 'Roboto';
-
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -307,17 +304,16 @@ ul {
     font-size: 14px;
     line-height: 1.7%;
     letter-spacing: 0.03em;
-    line-height: 1.7em;
     color: var(--main-bright-color);
+    text-decoration: none;
 }
 .log-bright {
     color: var(--main-bright-color);
 }
 .mail-class {
-    text-decoration-line: underline !important ;
     font-size: 14px;
     color: var(--text-color);
-
+    text-decoration: underline;
     font-weight: 500;
     line-height: 1.7%;
 }
