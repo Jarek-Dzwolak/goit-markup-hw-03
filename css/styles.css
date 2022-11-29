@@ -147,9 +147,9 @@ ul {
 .title-clas {
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36em;
+    line-height: 1.36;
     text-align: center;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.06;
     text-transform: uppercase;
 }
 .first-section > button {
@@ -179,7 +179,7 @@ ul {
     margin-bottom: 10px;
 }
 .our-strengths > li > p {
-    line-height: 1.7em;
+    line-height: 1.7;
     color: var(--text-color);
 }
 .third-section {
@@ -271,12 +271,12 @@ ul {
     padding: 20px 24px 4px 24px;
     font-weight: 700;
     font-size: 18px;
-    line-height: 2em;
+    line-height: 2;
     letter-spacing: 0.06em;
 }
 .cards > li > div > p {
     font-size: 16px;
-    line-height: 1.85em;
+    line-height: 1.85;
     color: var(--text-color);
     margin: 4px 4px 20px 24px;
 }
@@ -302,7 +302,7 @@ ul {
 }
 .adress-style {
     font-size: 14px;
-    line-height: 1.7%;
+    line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--main-bright-color);
     text-decoration: none;
@@ -315,7 +315,7 @@ ul {
     color: var(--text-color);
     text-decoration: underline;
     font-weight: 500;
-    line-height: 1.7%;
+    line-height: 1.7;
 }
 .mail-class:hover,
 .mail-class:focus {
