@@ -28,7 +28,7 @@ p {
     padding: 0;
 }
 body {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     color: var(--main-color);
     margin: 0;
 }
@@ -132,27 +132,28 @@ ul {
 /*-----MAIN-INDEX-----*/
 .dark-back {
     background-color: var(--second-background-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .first-section {
     background-color: var(--second-background-color);
     color: var(--main-bright-color);
-    padding-top: 96px;
-    padding-bottom: 176px;
-    display: flex;
-
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    width: 700px;
 }
 .title-clas {
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
+    line-height: 1.4em;
     text-align: center;
-    letter-spacing: 0.06;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 .first-section > button {
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     width: 200px;
     height: 50px;
@@ -164,6 +165,9 @@ ul {
     cursor: pointer;
     font-weight: 700;
     letter-spacing: 0.06em;
+}
+.class-size {
+    margin-top: -94px;
 }
 .our-strengths {
     display: flex;
@@ -184,6 +188,7 @@ ul {
 }
 .third-section {
     background-color: var(--style-color3);
+    margin-bottom: 0;
 }
 
 .h2-tittle {
@@ -200,15 +205,12 @@ ul {
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding-bottom: 94px;
 }
 
 .employess {
     display: flex;
     flex-wrap: nowrap;
-
     gap: 30px;
-    padding-bottom: 94px;
 }
 .employess > li {
     justify-content: center;
@@ -231,6 +233,7 @@ ul {
 .buttons {
     display: flex;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
 }
 .buttons > li > button {
     font-weight: 700;
